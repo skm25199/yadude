@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>YaDude | HOME</title>
+        <link rel="icon" type="image/ico" href="img/logo.png" />
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="css/pre.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/phone/nav-media.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/phone/home-media.css">
+        <link rel="stylesheet" href="css/chat-bot.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    </head>
+    <body onload="myFunction()">
+           <!-- Preloader -->
+           <div class="container-fluid" id="loading"> 
+            <h1>WELCOME</h1>
+        </div>
+        <!-- /Preloader -->
+          <!-- landing area -->
+
+        <div class="main-wrapper container-fluid"> <!-- main--div -->
+
+            <!-- NAVIGATION -->
+
+            <nav class="navbar fixed-top navbar-expand-lg" id="nav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">YADUDE</a>
+                  <button class="navbar-toggler navbar-toggler-right navbar-light " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color:white"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a class="nav-link" href="">About US</a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item emr-hid">
+                        <a class="nav-link" href="emergency.html">EMERGENCY</a>
+                    </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav> 
+            <!-- /NAVIGATION -->
+              
+              <div class="row landing-row">  <!-- landing-row -->
+                <div class="col-lg-5 col-xs-12 landing-col"> <!-- landing-col -->
+                  <div class="row logo-row"> <!--logo-row-->
+                    <div class="col-lg-12 col-xs-12 logo-col"> <!--logo-col-->
+                      <img src="img/logo.png"> <!--logo-->
+                    </div> <!--/logo-col -->
+                  </div> <!-- /logo-row -->
+                  <div class="row text-row"> <!--text-row-->
+                    <div class="col-lg-12 col-xs-12 text-col"> <!--text-col-->
+                    <h4>Automobile Services Aggregator</h4> <!-- text -->
+                    </div> <!--/text-col-->
+                  </div><!--/text-row-->
+                  <div class="row btn-row"> <!-- btn-row -->
+                    <div class="col-lg-12 col-xs-12 btn-col"> <!-- btn-col -->
+                    <button type="button" class="btn btn-danger"><a style="text-decoration:none; color:white;" href="franchise.html#learn">Learn More</a></button> <!-- btn-->
+                    </div> <!--/btn-col -->
+                  </div>  <!-- /btn-row -->
+                </div> <!-- /landing-col -->
+                <div class="col-lg-4 offset-lg-2 model-selector"> <!--modelselector-->
+                  <div class="container-fluid">
+                    <div class="card-1">
+                        <div class="card-body">
+                            <!-- Cart Header -->
+                            <div class="cart-header cart-section">
+                                <div class="col-sm-12 col-md-12 col-lg-12 header text-center">Select Vehicle</div>
+                            </div>
+                            <br>
+                            <!-- Vehicle type -->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12 desc-name">
+                                    <label for="brand-name">Vehicle Category :</label>
+                                    <select class="form-control" id="vehicle"  required>
+                                        <option value="#" selected disabled hidden>Vehicle Category</option>
+                                        <optgroup label="TYPES">
+                                            <option value="vehicle/car.html" id="car">Cars</option>
+                                            <option value="vehicle/car.html" id="bike">Bikes</option>
+                                            <option value="vehicle/car.html" id="truck">Trucks</option>
+                                            <option value="vehicle/car.html" id="heavy">Heavy Vehicle</option>
+                                            <option value="vehicle/car.html" id="bus">Bus</option>
+                                            <option value="vehicle/car.html" id="auto">Auto-Rikshaw</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                
+                               
+                            </div>
+                            <hr>
+                            <!-- Checkout-button -->
+                            <div class="row">
+                                <div class="col s12 m12 l12" style="border-radius:20px;">
+                                 <div class="btn btn-danger form-btn" type="button" >Submit
+                                        &nbsp;
+                                        <i class="far fa-paper-plane"></i>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div><!--/model-selector-->
+              </div><!-- /landing-row -->
+          </div> <!-- MAIN_DV -->
+
+           <!-- /landing area -->
+
+           <!-- VEHICLE CATEGORY -->
+           <div class="container v-container"> <!-- main-container -->
+              <div class="row heading-row"> <!-- heading-row -->
+                <div class="col-lg-12 col-xs-12 heading-col">  <!-- heading-col -->
+                <h2>VEHICLE CATEGORY</h2> <!-- heading -->
+                </div> <!--/heading-col-->                   
+              </div><!-- /heading-row -->
+              <div class="row c-card-row"> <!-- card-row -->
+                <!-- card-1 -->
+                <div class="col-lg-3 col-xs-1 card"> <!-- card -->
+                  <a href="vehicle/yadude-car.html"> <!-- card-link -->
+                    <div class="row image-row"> <!-- image-row -->
+                      <div class="col-lg-12 col-xs-12 image-col"> <!-- image-col-->
+                        <img class="v-c-1" src="img/vehicle/category/1.png" width="52%" > <!-- image -->
+                      </div> <!--/image-col -->
+                    </div> <!-- /image-row -->
+                    <div class="row text-row"> <!-- text-row -->
+                      <div class="col-lg-12 col-xs-12 text-col"> <!--text-col-->
+                        <p class="t-1">CARS</p> <!-- text -->
+                      </div> <!--/text-col -->
+                    </div> <!-- /text-row -->
+                    </a> <!-- /card-link -->
+                </div> <!-- /card -->
+
+                 <!-- card-2 -->
+                 <div class="col-lg-3 col-xs-3 offset-lg-1 card"> <!-- card -->
+                  <a href="vehicle/yadude-bike.html"> <!-- card-link -->
+                    <div class="row image-row"> <!-- image-row -->
+                      <div class="col-lg-12 col-xs-12 image-col"> <!-- image-col-->
+                        <img src="img/vehicle/category/2.png" width="30%" class="v-c-2"> <!--image -->
+                      </div> <!--/image-col -->
+                    </div> <!-- /image-row -->
+                    <div class="row text-row"> <!-- text-row -->
+                      <div class="col-lg-12 col-xs-12 text-col"> <!--text-col-->
+                        <p class="t-2">BIKES</p> <!-- text -->
+                      </div> <!--/text-col -->
+                    </div> <!-- /text-row -->
+                    </a> <!-- /card-link -->
+                </div> <!-- /card -->
+
+                <!-- card-3 -->
+                <div class="col-lg-3 col-xs-3 offset-lg-1 card"> <!-- card -->
+                  <a href="vehicle/yadude-trucks.html"> <!-- card-link -->
+                    <div class="row image-row"> <!-- image-row -->
+                      <div class="col-lg-12 col-xs-12 image-col"> <!-- image-col-->
+                        <img src="img/vehicle/category/3.png"width="40%" class="v-c-3"> <!--image -->
+                      </div> <!--/image-col -->
+                    </div> <!-- /image-row -->
+                    <div class="row text-row"> <!-- text-row -->
+                      <div class="col-lg-12 col-xs-12 text-col"> <!--text-col-->
+                        <p class="t-3">TRUCKS</p> <!-- text -->
+                      </div> <!--/text-col -->
+                    </div> <!-- /text-row -->
+                    </a> <!-- /card-link -->
+                </div> <!-- /card -->
+              </div> <!-- /card-row -->
+
+              <div class="row c-card-row"> <!-- card-row-2 -->
+                <!-- card-4 -->
+                <div class="col-lg-3 col-xs-1 card"> <!-- card -->
+                  <a href="vehicle/yadude-hv.html"> <!-- card-link -->
+                    <div class="row image-row"> <!-- image-row -->
+                      <div class="col-lg-12 col-xs-12 image-col"> <!-- image-col-->
+                        <img src="img/vehicle/category/4.png" width="50%" class="v-c-4"> <!--image -->
+                      </div> <!--/image-col -->
+                    </div> <!-- /image-row -->
+                    <div class="row text-row"> <!-- text-row -->
+                      <div class="col-lg-12 col-xs-12 text-col"> <!--text-col-->
+                        <p class="t-4">HEAVY VEHICLE</p> <!-- text -->
+                      </div> <!--/text-col -->
+                    </div> <!-- /text-row -->
+                    </a> <!-- /card-link -->
+                </div> <!-- /card -->
+
+                 <!-- card-5 -->
+                 <div class="col-lg-3 col-xs-3 offset-lg-1 card"> <!-- card -->
+                  <a href="vehicle/yadude-bus.html"> <!-- card-link -->
+                    <div class="row image-row"> <!-- image-row -->
+                      <div class="col-lg-12 col-xs-12 image-col"> <!-- image-col-->
+                        <img src="img/vehicle/category/5.png"width="50%" class="v-c-5"> <!--image -->
+                      </div> <!--/image-col -->
+                    </div> <!-- /image-row -->
+                    <div class="row text-row"> <!-- text-row -->
+                      <div class="col-lg-12 col-xs-12 text-col"> <!--text-col-->
+                        <p class="t-5">BUS</p> <!-- text -->
+                      </div> <!--/text-col -->
+                    </div> <!-- /text-row -->
+                    </a> <!-- /card-link -->
+                </div> <!-- /card -->
+
+                <!-- card-6 -->
+                <div class="col-lg-3 col-xs-3 offset-lg-1 card"> <!-- card -->
+                  <a href="vehicle/yadude-auto.html"> <!-- card-link -->
+                    <div class="row image-row"> <!-- image-row -->
+                      <div class="col-lg-12 col-xs-12 image-col"> <!-- image-col-->
+                        <img src="img/vehicle/category/6.png"width="30%" class="v-c-6"> <!--image -->
+                      </div> <!--/image-col -->
+                    </div> <!-- /image-row -->
+                    <div class="row text-row"> <!-- text-row -->
+                      <div class="col-lg-12 col-xs-12 text-col"> <!--text-col-->
+                        <p class="t-6">Auto Rikshaw</p> <!-- text -->
+                      </div> <!--/text-col -->
+                    </div> <!-- /text-row -->
+                    </a> <!-- /card-link -->
+                </div> <!-- /card -->
+              </div> <!-- /card-row -->
+           </div> <!-- / main-container -->
+           <!-- /vehcile category -->
+
+           <!-- Emergency Area -->
+          <div class="container-fluid emr-main-container"><!-- main-container -->
+            <div class="row emr-main-row v-100  "> <!-- main-row -->
+              <!-- image-1 -->
+              <div class="col-lg-2 emr-img-container"> <!-- img-conatiner -->
+                <div class="row emr-img-row v-100"> <!-- img-row -->
+                  <div class="col-lg-12 emr-img-holder"> <!--img-holder -->
+                     <i class="fas fa-car-battery fa-4x"></i><!-- image -->
+                  </div> <!--/img-holder -->
+                </div> <!-- /img-row -->
+                <div class="row emr-text-row"> <!-- img-row -->
+                  <div class="col-lg-12 emr-text-holder"> <!--img-holder -->
+                  <h6>Battery Jump Start</h6><!-- text -->
+                  </div> <!--/img-holder -->
+                </div> <!-- /img-row -->
+              </div> <!--/img-conatiner -->
+
+              <!-- image-2 -->
+              <div class="col-lg-2 emr-img-container offset-lg-1"> <!-- img-conatiner -->
+                <div class="row emr-img-row v-100"> <!-- img-row -->
+                  <div class="col-lg-12 emr-img-holder"> <!--img-holder -->
+                     <i class="fas fa-key fa-4x"></i><!-- image -->
+                  </div> <!--/img-holder -->
+                </div> <!-- /img-row -->
+                <div class="row emr-text-row"> <!-- img-row -->
+                  <div class="col-lg-12 emr-text-holder"> <!--img-holder -->
+                  <h6>KEY LOCKOUT</h6><!-- text -->
+                  </div> <!--/img-holder -->
+                </div> <!-- /img-row -->
+              </div> <!--/img-conatiner -->
+
+              <!-- image-3 -->
+              <div class="col-lg-2 emr-img-container offset-lg-1"> <!-- img-conatiner -->
+                <div class="row emr-img-row v-100"> <!-- img-row -->
+                  <div class="col-lg-12 emr-img-holder"> <!--img-holder -->
+                     <i class="fas fa-tools fa-4x"></i><!-- image -->
+                  </div> <!--/img-holder -->
+                </div> <!-- /img-row -->
+                <div class="row emr-text-row"> <!-- img-row -->
+                  <div class="col-lg-12 emr-text-holder"> <!--img-holder -->
+                  <h6>MINOR REPAIR</h6><!-- text -->
+                  </div> <!--/img-holder -->
+                </div> <!-- /img-row -->
+              </div> <!--/img-conatiner -->
+
+              <!-- image-4 -->
+              <div class="col-lg-2 emr-img-container offset-lg-1"> <!-- img-conatiner -->
+                <div class="row emr-img-row "> <!-- img-row -->
+                  <div class="col-lg-12 emr-img-holder"> <!--img-holder -->
+                     <i class="fas fa-thermometer-quarter fa-4x"></i><!-- image -->
+                  </div> <!--/img-holder -->
+                </div> <!-- /img-row -->
+                <div class="row emr-text-row"> <!-- img-row -->
+                  <div class="col-lg-12 emr-text-holder"> <!--img-holder -->
+                  <h6>FUEL EMPTY</h6><!-- text -->
+                  </div> <!--/img-holder -->
+                </div> <!-- /img-row -->
+              </div> <!--/img-conatiner -->
+            </div> <!-- /main-row -->
+            <div class="row button-main-row">
+              <div class="col-lg-4 offset-lg-4 emr-btn-wrapper">
+                <button type="button" class="btn btn-danger emr-btn">
+                <a style="text-decoration: none; color: #000;" href="emergency.html">EMERGENCY SERVICES</a></button>
+              </div>
+            </div>
+          </div> <!-- /main-container -->
+
+          <!-- PARTNERS AREA -->
+        <div class="container-fluid partner-wrapper">
+          <div class="row">
+            <div class="col-lg-3 col-xs-3 partner-col"><a style="text-decoration: none;" href="franchise.html">
+              <div class=" partner-logo"> 
+                <i class="fas fa-handshake fa-4x"></i>
+              </div>
+              <div class="partner-text">franchise</div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-xs-3 partner-col offset-lg-1 offset-sm-1"><a style="text-decoration: none;" href="serviceprovider.html">
+              <div class=" partner-logo"> 
+                <i class="fas fa-taxi fa-4x"></i>
+              </div>
+              <div class="partner-text">Service Provider</div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-xs-3 partner-col offset-lg-1 offset-sm-1"><a style="text-decoration: none;" href="customer.html">
+              <div class=" partner-logo"> 
+                <i class="fas fa-people-carry fa-4x"></i>
+              </div>
+              <div class="partner-text">Customer</div>
+            </a>
+            </div>
+          </div>
+        </div>
+
+         <!-- COUNTER BAR -->
+         <div class="container-fluid counter-wrapper">
+          <div class="row counter-holder">
+             <div class="col-lg-3 col-sm-3 counter-box">
+               <i class="fas fa-city fa-4x"></i>
+               <h2 class="timer count-title count-number" data-to="100" data-speed="5000"></h2>
+               <p class="count-text ">Cities</p>
+             </div>
+             <div class="col-lg-3 col-sm-3 offset-lg-1 offset-sm-1 counter-box">
+                <i class="fas fa-taxi fa-4x"></i>
+                <h2 class="timer count-title count-number" data-to="100" data-speed="5000"></h2>
+                <p class="count-text ">Service Center</p>
+             </div>
+             <div class="col-lg-3 col-sm-3 offset-lg-1 offset-sm-1 counter-box">
+                <i class="far fa-smile fa-4x"></i>
+                <h2 class="timer count-title count-number" data-to="100" data-speed="5000"></h2>
+                <p class="count-text ">Happy Customer</p>
+             </div>
+          </div>
+        </div>
+
+      <!--CIRCLE BUTTON-->
+      <a href="service-reg/index.html" data-toggle="tooltip" title="Click here to become a franchise">
+        <button type="button" class="btn btn-danger btn-circle btn-xl"><i class="far fa-grin-stars"></i>
+      </button></a>
+      <!--/CIRCLE BUTTON-->
+
+      <!-- footer area -->
+      <footer class="footer-distributed" id="footer">
+
+        <div class="footer-left">
+  
+          <h3><img src="img/logo.png" width="30%"></h3>
+  
+          <p class="footer-links">
+            <a href="#">HOME</a>
+            ·
+            <a href="#">ABOUT US</a>
+            ·
+            <a href="#">LOGIN</a>
+            ·
+            <a href="#">FAQ</a>
+            ·
+            <a href="#">CONTACT</a>
+          </p>
+  
+          <p class="footer-company-name">YADUDE &copy; 2019</p>
+        </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span>
+
+
+              Surjal Services Pvt Ltd, Block No-19, S.S.-1-74,</span> Rawa Bhata, Raipur , Chhattisgarh,492001</p>
+          </div>
+  
+          <div>
+            <i class="fas fa-phone-volume"></i>
+            <p>+91-7976376517</p>
+          </div>
+  
+          <div>
+            <i class="far fa-envelope"></i>
+            <p><a href="mailto:support@yadude.com">support@yadude.com</a></p>
+          </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+          <div class="footer-icons">
+  
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github-square"></i></a>
+  
+          </div>
+  
+        </div>
+
+        <div class="container-fluid clearfix">
+          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center copy">Designed & Developed By <a href="#" target="_blank" class="st">Stoned Techies</a> <i class="mdi mdi-heart text-danger"></i></span>
+        </div>
+  
+      </footer>
+             
+        <!-- SCRIPTS -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/pre.js"></script>
+         <script src="js/home-nav.js"></script>
+         <script src="js/counter.js"></script>
+         <script src="js/chat-bot.js"></script>
+         <script src="js/brandandmodel.js"></script>
+         
+         
+         <script type="text/javascript">
+          function gotoPage(select){
+              window.location = select.value;
+          }
+          </script>
+         <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
